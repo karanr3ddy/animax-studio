@@ -1,0 +1,37 @@
+{
+  "name": "grayscale",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Start Bootstrap"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  },
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "wow": "wowjs#^1.1.2",
+    "angular": "^1.6.1",
+    "angular-animate": "^1.6.1",
+    "angular-touch": "^1.6.1",
+    "angular-ui-router": "^0.4.2",
+    "ng-parallax": "^0.1.8",
+    "angular-deckgrid": "^0.5.0",
+    "ekko-lightbox": "^5.1.1",
+    "ihover": "^1.0.0",
+    "fullpage.js": "^2.9.2",
+    "imagehover.css": "*",
+    "angular-route": "^1.6.2",
+    "ng-simple-parallax": "*",
+    "angular-scroll": "^1.0.0"
+  }
+}
