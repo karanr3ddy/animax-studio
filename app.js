@@ -26,11 +26,21 @@ mainApp
 				controller:'PortfolioController'
 			});
 		});
-mainApp.run(function($rootScope,$state, $location, $anchorScroll){
+mainApp.run(function($rootScope,$state, $location, $anchorScroll,$window){
  
+  $rootScope.screenHeight={'min-height':$window.innerHeight+'px'};
+
+       angular.element($window).bind('resize', function(){
+
+       $rootScope.screenHeight={'min-height':$window.innerHeight+'px'};
+ 
+
+         // manuall $digest required as resize event
+         // is outside of angular
+         $rootScope.$digest();
+       });
 	 
-	$rootScope.screenHeight={'height':window.innerHeight+'px'}
- 
+	
 
 
 	//when the route is changed scroll to the proper element.
