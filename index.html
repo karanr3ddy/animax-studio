@@ -26,17 +26,19 @@
 <link rel="stylesheet" type="text/css" href="libs/imagehover.css/css/imagehover.css">
     <!-- Theme CSS -->
     <link href="assets/css/animax.css" rel="stylesheet">
-
+  <link href="libs/bootstrap-social/bootstrap-social.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
- 
+   <script src="libs/jquery/dist/jquery.js"></script>
+   <script src="libs/interactive_bg/jquery.interactive_bg.min.js"></script>
+   
 </head>
 
-    <script src="libs/jquery/dist/jquery.js"></script>
+  
 <!-- Preloader 
  <script type="text/javascript">
     //<![CDATA[
@@ -50,6 +52,7 @@
     -->
 </script>
 <body id="page-top" ng-cloak ng-app="animax" data-spy="scroll" data-target=".navbar-fixed-top">
+
 <!-- Preloader -->
 <div id="preloader" ng-show="preloader">
     <div id="status" class="animated flip" style="animation-iteration-count: infinite;"> </div>
@@ -84,7 +87,7 @@
                         <a  data-target="#home" ui-sref="home">Home</a>
                    </li>
                     <li>
-                        <a  data-target="#portfolio" ui-sref="portfolio">Portfolio</a>
+                        <a data-target="#portfolio" class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                    
                     <li ng-hide="isPortfolio"  >
@@ -107,7 +110,7 @@
     -->
 
     <!-- Footer -->
-    <footer >
+    <footer ng-style="isPortfolio? {'background': 'inherit' }:{'background': 'black' }" >
         <div class="container text-center">
             <p>Copyright &copy; Animax studio 2017</p>
         </div>
