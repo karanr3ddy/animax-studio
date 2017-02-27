@@ -1,6 +1,6 @@
 
     <!-- Page Content -->
-    <section id="portfolio" class="container" style="padding-top:60px; overflow: hidden; "> 
+    <section id="portfolio" class="container" style="padding-top:60px; overflow: hidden; " > 
 
         <div class="row">
 
@@ -8,12 +8,12 @@
                 <h1 class="header text-center">Portfolio</h1>
             </div>
           <ul class="flowGrid" ng-flow-grid="portfolioGrid" min-item-width="250">
-    <li class="flowGridItem imghvr-push-up" ng-repeat="item in photos">
+    <li class="flowGridItem imghvr-slide-up" ng-repeat="item in photos">
     <img ng-src="{{item.src}}">
         
         <figcaption>
        
-          <a href="{{item.src}}" class="btn btn-primary" data-gallery="portfolio" data-toggle="lightbox">View this picture</a>
+          <a href="{{item.src}}" class="btn " style="color: black;" data-gallery="portfolio" data-toggle="lightbox">View this picture</a>
         </figcaption>
     </li>
 </ul>
