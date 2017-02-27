@@ -20,6 +20,10 @@
     bottom:0;
     background-color:rgb(102, 209, 178);/* change if the mask should have another color then white */
     z-index:9999; /* makes sure it stays on top */
+     transition: all linear 0.5s;
+}
+#preloader.ng-hide {
+opacity: 0;
 }
 
 #status {
@@ -34,12 +38,12 @@
     margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 body {
-   overflow: hidden;
+   
   width: 100%;
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: black;
+  background-color: #607d8b;
 }
 html {
   width: 100%;
@@ -70,7 +74,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color:#dcbf42;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -78,7 +82,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: rgb(162, 112, 38);
 }
 .light {
   font-weight: 400;
@@ -176,12 +180,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   padding: 100px 0;
   text-align: center;
   color: white;
+  background-image: url("../img/intro-bg.jpg");
 background: linear-gradient(231deg, #5e3222, #22445e, #265e22, #822f7c);
-background-size: 800% 800%;
 
--webkit-animation: bgAnimation 30s ease infinite;
--moz-animation: bgAnimation 30s ease infinite;
-animation: bgAnimation 30s ease infinite;
 }
 .intro .intro-body { 
   display: table-cell;
@@ -189,6 +190,7 @@ animation: bgAnimation 30s ease infinite;
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
+  font-family: 'Montserrat';
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
@@ -271,6 +273,7 @@ animation: bgAnimation 30s ease infinite;
 }
 .content-section {
   padding-top: 100px;
+  background: 
 }
 .download-section {
   width: 100%;
@@ -307,16 +310,16 @@ animation: bgAnimation 30s ease infinite;
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid#dcbf42;
+  color:#dcbf42;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid#dcbf42;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color:#dcbf42;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -362,7 +365,7 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 #about {
- 
+
 }
 
 
@@ -428,3 +431,52 @@ background-size:cover !important;
     padding-right: 5px;
 }
 
+hr {
+  border: 3px solid white; width: 100px; margin-top:-20px; 
+}
+#contact 
+{
+ 
+}
+#vision {background: rgba(96,125,139,1);
+background: -moz-linear-gradient(top, rgba(96,125,139,1) 0%, rgba(96,125,139,1) 63%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(96,125,139,1)), color-stop(63%, rgba(96,125,139,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(96,125,139,1) 0%, rgba(96,125,139,1) 63%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(96,125,139,1) 0%, rgba(96,125,139,1) 63%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(96,125,139,1) 0%, rgba(96,125,139,1) 63%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(96,125,139,1) 0%, rgba(96,125,139,1) 63%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#607d8b', endColorstr='#000000', GradientType=0 );
+}
+#contact {
+  background: black;
+}
+footer 
+{
+  background: black;
+}
+.social-btn {
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 20px;
+   color: white;
+
+}
+.social-btn.twitter {
+   
+   background: #77DDF6;
+  border-color: #77DDF6;
+}
+.social-btn.twitter:hover {
+ 
+transform: rotate(360deg);  
+ 
+}
+.social-btn.google {
+   
+   background: #D43402;
+  border-color: #D43402;
+}
+.social-btn.google:hover {
+   transform: rotate(360deg); 
+   
+}

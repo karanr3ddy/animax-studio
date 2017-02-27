@@ -1,12 +1,13 @@
   
     <!-- Intro Header -->
-    <header  class="intro section"  ng-style="screenHeight" >
+    <header  class="intro section"  ng-style="screenHeight" style="background: url('assets/img/intro-bg.jpg') center; ">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                     <div  >
                         <h1 class="brand-heading " style="margin-bottom: 0px; ">Animax</h1>
+                       
                         <h2>Studio</h2>
                         </div>
                         <p class="intro-text">Animax is high-end, cutting-edge 2D, 3D game art development studio delivering premium quality game art and assets to the world’s leading game developers
@@ -21,12 +22,40 @@
   <!-- About Section -->
   <div ng-include="'views/about/about.html'" ></div>
 
-   <!-- Services Section -->
+  <section  id="about" class="container-fluid   text-center" style="padding-top: 60px;"  >
+      <div class="container">
+     
+        <div class="row">
+            <div class="col-sm-6">
+            <div style="">
+             
+                <h2>What we do </h2>
+                <hr  >
+                <p>
+                    We provide external art production for across different genres and game platforms including consoles, PC, Mobile devices and VR. We do our best when we can take full asset development of a game for the customer, We have a vast amount of experience with designing all of the graphical assets of the game, but we can also coordinate our professionals with your own team if you need a complementary set of skills. Our intention is always the same: to achieve the goals of the customer with the highest quality
+                </p>
+            </div>
+            </div>
+            <div class="col-sm-6">
+                  
+                <h2>Why choose us </h2>
+                 <hr >
+                <p>
+                    We are specialized in 3D assets development for production and video games. Our multi-talented and diverse team ensures that we deliver AAA quality ready to publish asset on time to our customers. We are able to assist in saving 50% of your expenses while ensuring quality and timely delivery. We believe in transparency and maintaining client's privacy and confidentiality.
+                </p>    
+            </div>
+        
+        </div>
+       
+        </div>
+    </section>
+
+   <!-- Vision Section -->
   <div ng-include="'views/vision/vision.html'"  ></div>
 
  
     <!-- Download Section -->
-    <section id="team"  class="content-section text-center section">
+    <section id="team"  class=" text-center section">
         <div class="download-section"  ng-parallax pattern="'https://cdn.shutterstock.com/shutterstock/videos/9568208/thumb/1.jpg'" speed="10" reverse="false">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -39,24 +68,24 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container-fluid  content-section text-center">
+    <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact  </h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <p>Feel free to email us to provide some feedback on our services, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">feedback@email.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="#" class="btn btn-default social-btn btn-lg twitter"><i class="fa fa-twitter fa-fw"></i></a>
                     </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                   
+                                       <li>
+                        <a href="#" class="btn btn-default btn-lg social-btn google"><i class="fa fa-google-plus fa-fw"></i></a>
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     </section>

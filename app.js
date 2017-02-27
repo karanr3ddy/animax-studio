@@ -31,10 +31,19 @@ mainApp.run(function($rootScope,$state, $location, $anchorScroll){
 	 
 	$rootScope.screenHeight={'height':window.innerHeight+'px'}
  
+
+
 	//when the route is changed scroll to the proper element.
   $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
     if($location.hash()) $anchorScroll();  
   });
+$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+   $rootScope.preloader = true;
+});
+
+  $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+       $rootScope.preloader = false;
+    });
 
 });
 
